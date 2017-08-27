@@ -13,4 +13,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   belongs_to :user, :optional => true
+
+  mount_uploader :avatar, AvatarUploader
 end
